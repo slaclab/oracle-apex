@@ -1,0 +1,674 @@
+17:49:45 SQL> 
+17:49:45 SQL> create table rsw_form_01312022
+17:49:45   2  as select * from rsw_form;
+
+Table created.
+
+Elapsed: 00:00:00.29
+17:49:45 SQL> 
+17:49:45 SQL> create table rsw_form_jn_01312022
+17:49:45   2  as select * from rsw_form_jn;
+
+Table created.
+
+Elapsed: 00:00:00.63
+17:49:46 SQL> 
+17:49:46 SQL> select a.form_id as rsw_form_id, a.prob_id as original_cater_id, a.job_id as original_job_id,a.jn_datetime as form_created_on,
+17:50:36   2  b.prob_id as latest_cater_id, b.job_id as latest_job_id, getval('RAD_FORM_STATUS',b.form_status_id) as form_status
+17:50:36   3  from rsw_form_jn a, rsw_form b
+17:50:36   4  where a.jn_operation = 'INS'
+17:50:36   5  and a.form_id = b.form_id
+17:50:36   6  and a.prob_id != b.prob_id
+17:50:36   7  order by a.form_id desc;
+
+RSW_FORM_ID ORIGINAL_CATER_ID ORIGINAL_JOB_ID FORM_CREATE LATEST_CATER_ID       
+----------- ----------------- --------------- ----------- ---------------       
+LATEST_JOB_ID                                                                   
+-------------                                                                   
+FORM_STATUS                                                                     
+--------------------------------------------------------------------------------
+       8423            149656          107842 05-AUG-2021          152261       
+                                                                                
+Drop                                                                            
+                                                                                
+       8352            150975          106955 01-JUN-2021          146461       
+       107072                                                                   
+Closed                                                                          
+                                                                                
+       8285            149301          106157 02-APR-2021          150188       
+       106157                                                                   
+Drop                                                                            
+                                                                                
+       8055            142461          101704 16-SEP-2020          146406       
+                                                                                
+Closed                                                                          
+                                                                                
+       8008            142461          101704 24-AUG-2020          146052       
+                                                                                
+Closed                                                                          
+                                                                                
+       7475            139487           98540 06-SEP-2018          138942       
+                                                                                
+Closed                                                                          
+                                                                                
+       7237            136094           95523 14-SEP-2017          135990       
+                                                                                
+Closed                                                                          
+                                                                                
+       6773            129049                 07-JAN-2016          130081       
+                                                                                
+Drop                                                                            
+                                                                                
+       6570            126483                 28-JUL-2015          117516       
+                                                                                
+Closed                                                                          
+                                                                                
+       6116            115881           79465 04-APR-2014          115878       
+                                                                                
+Closed                                                                          
+                                                                                
+       6009            112810           77431 15-NOV-2013          112824       
+                                                                                
+Closed                                                                          
+                                                                                
+       5991            109746           76719 28-OCT-2013          112293       
+                                                                                
+Closed                                                                          
+                                                                                
+       5978            110781           76479 18-OCT-2013          111058       
+                                                                                
+Drop                                                                            
+                                                                                
+       5975            109746           76719 18-OCT-2013          109775       
+                                                                                
+Drop                                                                            
+                                                                                
+       5906            110681           76100 09-SEP-2013          109801       
+        76100                                                                   
+Drop                                                                            
+                                                                                
+       5905            110681           76100 09-SEP-2013          109801       
+        76100                                                                   
+Drop                                                                            
+                                                                                
+       5340             99533           68644 29-MAR-2012           99488       
+                                                                                
+Drop                                                                            
+                                                                                
+
+17 rows selected.
+
+Elapsed: 00:00:00.03
+17:50:36 SQL> 
+17:50:36 SQL> update rswcf set prob_id =  99533 ,
+17:50:51   2  		 job_id =  68644
+17:50:51   3  where form_id =  5340
+17:50:51   4  and prob_id =  99488
+17:50:51   5  ;
+update rswcf set prob_id =  99533 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  110681 ,
+17:50:51   2  		 job_id =  76100
+17:50:51   3  where form_id =  5905
+17:50:51   4  and prob_id =  109801
+17:50:51   5  ;
+update rswcf set prob_id =  110681 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.01
+17:50:51 SQL> update rswcf set prob_id =  110681 ,
+17:50:51   2  		 job_id =  76100
+17:50:51   3  where form_id =  5906
+17:50:51   4  and prob_id =  109801
+17:50:51   5  ;
+update rswcf set prob_id =  110681 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  109746 ,
+17:50:51   2  		 job_id =  76719
+17:50:51   3  where form_id =  5975
+17:50:51   4  and prob_id =  109775
+17:50:51   5  ;
+update rswcf set prob_id =  109746 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  110781 ,
+17:50:51   2  		 job_id =  76479
+17:50:51   3  where form_id =  5978
+17:50:51   4  and prob_id =  111058
+17:50:51   5  ;
+update rswcf set prob_id =  110781 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  109746 ,
+17:50:51   2  		 job_id =  76719
+17:50:51   3  where form_id =  5991
+17:50:51   4  and prob_id =  112293
+17:50:51   5  ;
+update rswcf set prob_id =  109746 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  112810 ,
+17:50:51   2  		 job_id =  77431
+17:50:51   3  where form_id =  6009
+17:50:51   4  and prob_id =  112824
+17:50:51   5  ;
+update rswcf set prob_id =  112810 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  115881 ,
+17:50:51   2  		 job_id =  79465
+17:50:51   3  where form_id =  6116
+17:50:51   4  and prob_id =  115878
+17:50:51   5  ;
+update rswcf set prob_id =  115881 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  126483
+17:50:51   2  where form_id =  6570
+17:50:51   3  and prob_id =  117516
+17:50:51   4  ;
+update rswcf set prob_id =  126483
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  129049
+17:50:51   2  where form_id =  6773
+17:50:51   3  and prob_id =  130081
+17:50:51   4  ;
+update rswcf set prob_id =  129049
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  136094 ,
+17:50:51   2  		 job_id =  95523
+17:50:51   3  where form_id =  7237
+17:50:51   4  and prob_id =  135990
+17:50:51   5  ;
+update rswcf set prob_id =  136094 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.01
+17:50:51 SQL> update rswcf set prob_id =  139487 ,
+17:50:51   2  		 job_id =  98540
+17:50:51   3  where form_id =  7475
+17:50:51   4  and prob_id =  138942
+17:50:51   5  ;
+update rswcf set prob_id =  139487 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  142461 ,
+17:50:51   2  		 job_id =  101704
+17:50:51   3  where form_id =  8008
+17:50:51   4  and prob_id =  146052
+17:50:51   5  ;
+update rswcf set prob_id =  142461 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  142461 ,
+17:50:51   2  		 job_id =  101704
+17:50:51   3  where form_id =  8055
+17:50:51   4  and prob_id =  146406
+17:50:51   5  ;
+update rswcf set prob_id =  142461 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  149301 ,
+17:50:51   2  		 job_id =  106157
+17:50:51   3  where form_id =  8285
+17:50:51   4  and prob_id =  150188
+17:50:51   5  ;
+update rswcf set prob_id =  149301 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  150975 ,
+17:50:51   2  		 job_id =  106955
+17:50:51   3  where form_id =  8352
+17:50:51   4  and prob_id =  146461
+17:50:51   5  ;
+update rswcf set prob_id =  150975 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> update rswcf set prob_id =  149656 ,
+17:50:51   2  		 job_id =  107842
+17:50:51   3  where form_id =  8423
+17:50:51   4  and prob_id =  152261
+17:50:51   5  ;
+update rswcf set prob_id =  149656 ,
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+17:50:51 SQL> 
+17:50:51 SQL> 
+17:51:43 SQL> update rsw_form set prob_id =  99533 ,
+17:51:47   2  		 job_id =  68644
+17:51:47   3  where form_id =  5340
+17:51:47   4  and prob_id =  99488
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.10
+17:51:47 SQL> update rsw_form set prob_id =  110681 ,
+17:51:47   2  		 job_id =  76100
+17:51:47   3  where form_id =  5905
+17:51:47   4  and prob_id =  109801
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.02
+17:51:47 SQL> update rsw_form set prob_id =  110681 ,
+17:51:47   2  		 job_id =  76100
+17:51:47   3  where form_id =  5906
+17:51:47   4  and prob_id =  109801
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.01
+17:51:47 SQL> update rsw_form set prob_id =  109746 ,
+17:51:47   2  		 job_id =  76719
+17:51:47   3  where form_id =  5975
+17:51:47   4  and prob_id =  109775
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.03
+17:51:47 SQL> update rsw_form set prob_id =  110781 ,
+17:51:47   2  		 job_id =  76479
+17:51:47   3  where form_id =  5978
+17:51:47   4  and prob_id =  111058
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.01
+17:51:47 SQL> update rsw_form set prob_id =  109746 ,
+17:51:47   2  		 job_id =  76719
+17:51:47   3  where form_id =  5991
+17:51:47   4  and prob_id =  112293
+17:51:47   5  ;
+and prob_id =  112293
+  *
+ERROR at line 4:
+ORA-01843: not a valid month 
+ORA-06512: at "MCC_MAINT.RSW_PKG", line 1978 
+ORA-06512: at "MCC_MAINT.RSW_FORM_MESSAGES_TRG", line 368 
+ORA-04088: error during execution of trigger 'MCC_MAINT.RSW_FORM_MESSAGES_TRG' 
+
+
+Elapsed: 00:00:00.03
+17:51:47 SQL> update rsw_form set prob_id =  112810 ,
+17:51:47   2  		 job_id =  77431
+17:51:47   3  where form_id =  6009
+17:51:47   4  and prob_id =  112824
+17:51:47   5  ;
+and prob_id =  112824
+  *
+ERROR at line 4:
+ORA-01843: not a valid month 
+ORA-06512: at "MCC_MAINT.RSW_PKG", line 1978 
+ORA-06512: at "MCC_MAINT.RSW_FORM_MESSAGES_TRG", line 368 
+ORA-04088: error during execution of trigger 'MCC_MAINT.RSW_FORM_MESSAGES_TRG' 
+
+
+Elapsed: 00:00:00.01
+17:51:47 SQL> update rsw_form set prob_id =  115881 ,
+17:51:47   2  		 job_id =  79465
+17:51:47   3  where form_id =  6116
+17:51:47   4  and prob_id =  115878
+17:51:47   5  ;
+and prob_id =  115878
+  *
+ERROR at line 4:
+ORA-01843: not a valid month 
+ORA-06512: at "MCC_MAINT.RSW_PKG", line 1978 
+ORA-06512: at "MCC_MAINT.RSW_FORM_MESSAGES_TRG", line 368 
+ORA-04088: error during execution of trigger 'MCC_MAINT.RSW_FORM_MESSAGES_TRG' 
+
+
+Elapsed: 00:00:00.02
+17:51:47 SQL> update rsw_form set prob_id =  126483
+17:51:47   2  where form_id =  6570
+17:51:47   3  and prob_id =  117516
+17:51:47   4  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.01
+17:51:47 SQL> update rsw_form set prob_id =  129049
+17:51:47   2  where form_id =  6773
+17:51:47   3  and prob_id =  130081
+17:51:47   4  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.01
+17:51:47 SQL> update rsw_form set prob_id =  136094 ,
+17:51:47   2  		 job_id =  95523
+17:51:47   3  where form_id =  7237
+17:51:47   4  and prob_id =  135990
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.02
+17:51:47 SQL> update rsw_form set prob_id =  139487 ,
+17:51:47   2  		 job_id =  98540
+17:51:47   3  where form_id =  7475
+17:51:47   4  and prob_id =  138942
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.02
+17:51:47 SQL> update rsw_form set prob_id =  142461 ,
+17:51:47   2  		 job_id =  101704
+17:51:47   3  where form_id =  8008
+17:51:47   4  and prob_id =  146052
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.01
+17:51:47 SQL> update rsw_form set prob_id =  142461 ,
+17:51:47   2  		 job_id =  101704
+17:51:47   3  where form_id =  8055
+17:51:47   4  and prob_id =  146406
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.02
+17:51:47 SQL> update rsw_form set prob_id =  149301 ,
+17:51:47   2  		 job_id =  106157
+17:51:47   3  where form_id =  8285
+17:51:47   4  and prob_id =  150188
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.01
+17:51:47 SQL> update rsw_form set prob_id =  150975 ,
+17:51:47   2  		 job_id =  106955
+17:51:47   3  where form_id =  8352
+17:51:47   4  and prob_id =  146461
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.02
+17:51:47 SQL> update rsw_form set prob_id =  149656 ,
+17:51:47   2  		 job_id =  107842
+17:51:47   3  where form_id =  8423
+17:51:47   4  and prob_id =  152261
+17:51:47   5  ;
+
+1 row updated.
+
+Elapsed: 00:00:00.02
+17:51:47 SQL> 
+17:51:47 SQL> select a.form_id as rsw_form_id, a.prob_id as original_cater_id, a.job_id as original_job_id,a.jn_datetime as form_created_on,
+17:53:04   2  b.prob_id as latest_cater_id, b.job_id as latest_job_id, getval('RAD_FORM_STATUS',b.form_status_id) as form_status
+17:53:04   3  from rsw_form_jn a, rsw_form b
+17:53:04   4  where a.jn_operation = 'INS'
+17:53:04   5  and a.form_id = b.form_id
+17:53:04   6  and a.prob_id != b.prob_id
+17:53:04   7  order by a.form_id desc;
+
+RSW_FORM_ID ORIGINAL_CATER_ID ORIGINAL_JOB_ID FORM_CREATE LATEST_CATER_ID       
+----------- ----------------- --------------- ----------- ---------------       
+LATEST_JOB_ID                                                                   
+-------------                                                                   
+FORM_STATUS                                                                     
+--------------------------------------------------------------------------------
+       6116            115881           79465 04-APR-2014          115878       
+                                                                                
+Closed                                                                          
+                                                                                
+       6009            112810           77431 15-NOV-2013          112824       
+                                                                                
+Closed                                                                          
+                                                                                
+       5991            109746           76719 28-OCT-2013          112293       
+                                                                                
+Closed                                                                          
+                                                                                
+
+Elapsed: 00:00:00.03
+17:53:04 SQL> update rsw_form set prob_id =  109746 ,
+17:54:08   2  		 job_id =  76719
+17:54:08   3  where form_id =  5991
+17:54:08   4  and prob_id =  112293
+17:54:08   5  ;
+and prob_id =  112293
+  *
+ERROR at line 4:
+ORA-01843: not a valid month 
+ORA-06512: at "MCC_MAINT.RSW_PKG", line 1978 
+ORA-06512: at "MCC_MAINT.RSW_FORM_MESSAGES_TRG", line 368 
+ORA-04088: error during execution of trigger 'MCC_MAINT.RSW_FORM_MESSAGES_TRG' 
+
+
+Elapsed: 00:00:00.02
+17:54:08 SQL> update rsw_form set prob_id =  112810 ,
+17:54:08   2  		 job_id =  77431
+17:54:08   3  where form_id =  6009
+17:54:08   4  and prob_id =  112824
+17:54:08   5  ;
+and prob_id =  112824
+  *
+ERROR at line 4:
+ORA-01843: not a valid month 
+ORA-06512: at "MCC_MAINT.RSW_PKG", line 1978 
+ORA-06512: at "MCC_MAINT.RSW_FORM_MESSAGES_TRG", line 368 
+ORA-04088: error during execution of trigger 'MCC_MAINT.RSW_FORM_MESSAGES_TRG' 
+
+
+Elapsed: 00:00:00.01
+17:54:08 SQL> update rsw_form set prob_id =  115881 ,
+17:54:08   2  		 job_id =  79465
+17:54:08   3  where form_id =  6116
+17:54:08   4  and prob_id =  115878
+17:54:08   5  ;select a.form_id as rsw_form_id, a.prob_id as original_cater_id, a.job_id as original_job_id,a.jn_datetime as form_created_on,
+17:54:54   6  b.prob_id as latest_cater_id, b.job_id as latest_job_id, getval('RAD_FORM_STATUS',b.form_status_id) as form_status
+17:54:54   7  from rsw_form_jn a, rsw_form b
+17:54:54   8  where a.jn_operation = 'INS'
+17:54:54   9  and a.form_id = b.form_id
+17:54:54  10  and a.form_id in (8423,
+17:54:54  11  8352,
+17:54:54  12  8285,
+17:54:54  13  8055,
+17:54:54  14  8008,
+17:54:54  15  7475,
+17:54:54  16  7237,
+17:54:54  17  6773,
+17:54:54  18  6570,
+17:54:54  19  6116,
+17:54:54  20  6009,
+17:54:54  21  5991,
+17:54:54  22  5978,
+17:54:54  23  5975,
+17:54:54  24  5906,
+17:54:54  25  5905,
+17:54:54  26  5340
+17:54:54  27  )
+17:54:54  28  order by a.form_id desc;
+;select a.form_id as rsw_form_id, a.prob_id as original_cater_id, a.job_id as original_job_id,a.jn_datetime as form_created_on,
+*
+ERROR at line 5:
+ORA-00933: SQL command not properly ended 
+
+
+Elapsed: 00:00:00.00
+17:54:54 SQL> 
+17:54:54 SQL> select a.form_id as rsw_form_id, a.prob_id as original_cater_id, a.job_id as original_job_id,a.jn_datetime as form_created_on,
+17:55:58   2  b.prob_id as latest_cater_id, b.job_id as latest_job_id, getval('RAD_FORM_STATUS',b.form_status_id) as form_status
+17:55:58   3  from rsw_form_jn a, rsw_form b
+17:56:06   4  where a.jn_operation = 'INS'
+17:56:06   5  and a.form_id = b.form_id
+17:56:06   6  and a.form_id in (8423,
+17:56:18   7  8352,
+17:56:18   8  8285,
+17:56:18   9  8055,
+17:56:18  10  8008,
+17:56:18  11  7475,
+17:56:18  12  7237,
+17:56:18  13  6773,
+17:56:18  14  6570,
+17:56:18  15  6116,
+17:56:18  16  6009,
+17:56:18  17  5991,
+17:56:18  18  5978,
+17:56:18  19  5975,
+17:56:18  20  5906,
+17:56:18  21  5905,
+17:56:18  22  5340
+17:56:18  23  )
+17:56:18  24  order by a.form_id desc;
+
+RSW_FORM_ID ORIGINAL_CATER_ID ORIGINAL_JOB_ID FORM_CREATE LATEST_CATER_ID       
+----------- ----------------- --------------- ----------- ---------------       
+LATEST_JOB_ID                                                                   
+-------------                                                                   
+FORM_STATUS                                                                     
+--------------------------------------------------------------------------------
+       8423            149656          107842 05-AUG-2021          149656       
+       107842                                                                   
+Drop                                                                            
+                                                                                
+       8352            150975          106955 01-JUN-2021          150975       
+       106955                                                                   
+Closed                                                                          
+                                                                                
+       8285            149301          106157 02-APR-2021          149301       
+       106157                                                                   
+Drop                                                                            
+                                                                                
+       8055            142461          101704 16-SEP-2020          142461       
+       101704                                                                   
+Closed                                                                          
+                                                                                
+       8008            142461          101704 24-AUG-2020          142461       
+       101704                                                                   
+Closed                                                                          
+                                                                                
+       7475            139487           98540 06-SEP-2018          139487       
+        98540                                                                   
+Closed                                                                          
+                                                                                
+       7237            136094           95523 14-SEP-2017          136094       
+        95523                                                                   
+Closed                                                                          
+                                                                                
+       6773            129049                 07-JAN-2016          129049       
+                                                                                
+Drop                                                                            
+                                                                                
+       6570            126483                 28-JUL-2015          126483       
+                                                                                
+Closed                                                                          
+                                                                                
+       6116            115881           79465 04-APR-2014          115878       
+                                                                                
+Closed                                                                          
+                                                                                
+       6009            112810           77431 15-NOV-2013          112824       
+                                                                                
+Closed                                                                          
+                                                                                
+       5991            109746           76719 28-OCT-2013          112293       
+                                                                                
+Closed                                                                          
+                                                                                
+       5978            110781           76479 18-OCT-2013          110781       
+        76479                                                                   
+Drop                                                                            
+                                                                                
+       5975            109746           76719 18-OCT-2013          109746       
+        76719                                                                   
+Drop                                                                            
+                                                                                
+       5906            110681           76100 09-SEP-2013          110681       
+        76100                                                                   
+Drop                                                                            
+                                                                                
+       5905            110681           76100 09-SEP-2013          110681       
+        76100                                                                   
+Drop                                                                            
+                                                                                
+       5340             99533           68644 29-MAR-2012           99533       
+        68644                                                                   
+Drop                                                                            
+                                                                                
+
+17 rows selected.
+
+Elapsed: 00:00:00.03
+17:56:26 SQL> spool off;

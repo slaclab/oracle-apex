@@ -1,0 +1,24 @@
+APEX App is being modified - Pages 18/200 to include the Div code for Groups LOV, using
+P0_CURRENT_DIV_CODE_ID. Otherwise, "Test Fac" is listed even though part of NLCTA group.
+Also modified the LOV "ACTIVE GROUPS" - changed for div code from P0_SLAC_DIVISION to P0_CURRENT_DIV_CODE_ID - as this could present problems for users who did All Div search
+and went into the Cater to create a new job for "TEC", while their top level Div code is "NLCTA".
+PLEASE COPY the MAIN_SCRIPT_TEMPLATE.sql Template script from the Previous CATER RUN.
+Release 01.06
+=================================================================================================================================================
+Database scripts:
+=================================================================================================================================================
+Whenever there is a need to change the database object (except tables), you need to check out the appropriate source files from the source control, 
+modify and check them in. Make sure that most of the PL/SQL contain the phase “create or replace” to avoid the object already exists errors. 
+If a new object is created, just check in the newly created object source file.
+
+Make an entry in the release notes and create a new controlling script under the appropriate database/schema folder to call 
+the release associated files that are modified and or created. 
+This will be a wrapper SQL file or a controlling script to call all your source control SQL files.
+  
+Please add deployment instructions into the folder containing your database scripts.
+---------------------------------
+MCC_MAINT@SLACPROD
+V:\CD\poonam\POONAM\RELEASES\2022\CATER\2022_12_01\Database_Deployment\SLACPROD\MCC_MAINT\MAIN_SCRIPT.sql
+
+
+=================================================================================================================================================

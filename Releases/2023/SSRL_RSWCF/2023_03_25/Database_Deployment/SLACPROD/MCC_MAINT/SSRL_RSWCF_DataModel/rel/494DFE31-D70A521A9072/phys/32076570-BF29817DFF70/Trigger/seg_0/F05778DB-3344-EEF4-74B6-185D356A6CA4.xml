@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SSRL_RSW_USER_ROLES_AIUDR" directorySegmentName="seg_0" id="F05778DB-3344-EEF4-74B6-185D356A6CA4">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_USER_ROLES_AIUDR</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body>DECLARE&lt;br/&gt;    JN_OPERATION VARCHAR2(3);&lt;br/&gt;BEGIN&lt;br/&gt;    IF INSERTING THEN&lt;br/&gt;        JN_OPERATION := &apos;INS&apos;;&lt;br/&gt;    ELSIF UPDATING THEN&lt;br/&gt;        JN_OPERATION := &apos;UPD&apos;;&lt;br/&gt;    ELSIF DELETING THEN&lt;br/&gt;        JN_OPERATION := &apos;DEL&apos;;&lt;br/&gt;    END IF;&lt;br/&gt;    IF INSERTING OR UPDATING THEN&lt;br/&gt;        INSERT INTO SSRL_RSW_USER_ROLES_JN&lt;br/&gt;        ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION&lt;br/&gt;         , USER_ROLE_ID, ROLE_ID, USER_ID&lt;br/&gt;         , STATUS_AI_CHK, CREATED_BY, CREATED_DATE, MODIFIED_BY&lt;br/&gt;         , MODIFIED_DATE, PRIMARY_ROLE&lt;br/&gt;         ) VALUES (jn_operation, NVL(V(&apos;APP_USER&apos;),USER), SYSDATE, NULL, NULL, userenv(&apos;sessionid&apos;)&lt;br/&gt;         , :NEW.USER_ROLE_ID, :NEW.ROLE_ID, :NEW.USER_ID&lt;br/&gt;         , :NEW.STATUS_AI_CHK, :NEW.CREATED_BY, :NEW.CREATED_DATE, :NEW.MODIFIED_BY&lt;br/&gt;         , :NEW.MODIFIED_DATE, :NEW.PRIMARY_ROLE&lt;br/&gt;         );&lt;br/&gt;     END IF;&lt;br/&gt;     IF DELETING THEN&lt;br/&gt;         INSERT INTO SSRL_RSW_USER_ROLES_JN&lt;br/&gt;         ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION&lt;br/&gt;         , USER_ROLE_ID, ROLE_ID, USER_ID&lt;br/&gt;         , STATUS_AI_CHK, CREATED_BY, CREATED_DATE, MODIFIED_BY&lt;br/&gt;         , MODIFIED_DATE, PRIMARY_ROLE&lt;br/&gt;         ) VALUES (jn_operation, NVL(V(&apos;APP_USER&apos;),USER), SYSDATE, NULL, NULL,userenv(&apos;sessionid&apos;)&lt;br/&gt;         , :OLD.USER_ROLE_ID, :OLD.ROLE_ID, :OLD.USER_ID&lt;br/&gt;         , :OLD.STATUS_AI_CHK, :OLD.CREATED_BY, :OLD.CREATED_DATE, :OLD.MODIFIED_BY&lt;br/&gt;         , :OLD.MODIFIED_DATE, :OLD.PRIMARY_ROLE );&lt;br/&gt;         END IF;&lt;br/&gt;END;&lt;br/&gt;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>0FAEE865-89F5-2F3A-E8BE-340C84480319</owner>
+<table>F558276E-21BC-3E99-3250-CAE9EFBE4C85</table>
+</TriggerOraclev10g>

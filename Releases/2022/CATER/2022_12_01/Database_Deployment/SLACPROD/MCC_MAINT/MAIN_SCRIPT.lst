@@ -1,0 +1,175 @@
+
+OBJECT_NAME                                                                     
+--------------------------------------------------------------------------------
+SUBOBJECT_NAME                                                                  
+--------------------------------------------------------------------------------
+ OBJECT_ID DATA_OBJECT_ID OBJECT_TYPE             CREATED     LAST_DDL_TI       
+---------- -------------- ----------------------- ----------- -----------       
+TIMESTAMP           STATUS  T G S  NAMESPACE                                    
+------------------- ------- - - - ----------                                    
+EDITION_NAME                                                                    
+--------------------------------------------------------------------------------
+SHARING            E O A                                                        
+------------------ - - -                                                        
+DEFAULT_COLLATION                                                               
+--------------------------------------------------------------------------------
+D S CREATED_APPID CREATED_VSNID MODIFIED_APPID MODIFIED_VSNID                   
+- - ------------- ------------- -------------- --------------                   
+CHG_CHANGE_LOG_PKG                                                              
+                                                                                
+    174625                PACKAGE BODY            09-OCT-2012 30-SEP-2022       
+2022-09-30:00:10:31 INVALID N N N          2                                    
+                                                                                
+NONE               Y N N                                                        
+                                                                                
+N N                                                                             
+                                                                                
+UTL                                                                             
+                                                                                
+    245428                PACKAGE BODY            22-OCT-2013 30-SEP-2022       
+2022-09-30:00:10:31 INVALID N N N          2                                    
+                                                                                
+NONE               Y N N                                                        
+                                                                                
+N N                                                                             
+                                                                                
+ART_CATER_CHARGE_CODES_VW                                                       
+                                                                                
+    173236                VIEW                    01-OCT-2012 30-SEP-2022       
+2022-09-30:00:09:41 INVALID N N N          1                                    
+                                                                                
+NONE               Y N N                                                        
+USING_NLS_COMP                                                                  
+N N                                                                             
+                                                                                
+
+Elapsed: 00:00:00.16
+
+TABLE_NAME                                                                      
+--------------------------------------------------------------------------------
+TRIGGER_NAME                                                                    
+--------------------------------------------------------------------------------
+TRIGGER_TYPE                                                                    
+----------------                                                                
+TRIGGERING_EVENT                                                                
+--------------------------------------------------------------------------------
+ART_JOBS                                                                        
+ART_JOBS_AIUS_TRG                                                               
+AFTER STATEMENT                                                                 
+INSERT OR UPDATE                                                                
+                                                                                
+ART_JOBS                                                                        
+ART_JOBS_MESSAGES_TRG                                                           
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE                                                                
+                                                                                
+ART_JUNC_CATER_DEPOT                                                            
+ART_JUNC_CATER_DEPOT_CHG_TRG                                                    
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE OR DELETE                                                      
+                                                                                
+ART_MAINT_ACCESS_TYPES                                                          
+ART_MAINT_ACCESS_TYPES_CHG_TRG                                                  
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE OR DELETE                                                      
+                                                                                
+ART_NOTIFICATIONS                                                               
+ART_NOTIFICATIONS_CHG_TRG                                                       
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE OR DELETE                                                      
+                                                                                
+ART_PROBLEMS                                                                    
+ART_PROBLEMS_MESSAGES_TRG                                                       
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE                                                                
+                                                                                
+ART_SOLUTIONS                                                                   
+ART_SOLUTIONS_AIUS_TRG                                                          
+AFTER STATEMENT                                                                 
+INSERT OR UPDATE                                                                
+                                                                                
+ART_SOLUTIONS                                                                   
+ART_SOLUTIONS_MESSAGES_TRG                                                      
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE                                                                
+                                                                                
+
+8 rows selected.
+
+Elapsed: 00:00:00.17
+
+OBJECT_NAME                                                                     
+--------------------------------------------------------------------------------
+SUBOBJECT_NAME                                                                  
+--------------------------------------------------------------------------------
+ OBJECT_ID DATA_OBJECT_ID OBJECT_TYPE             CREATED     LAST_DDL_TI       
+---------- -------------- ----------------------- ----------- -----------       
+TIMESTAMP           STATUS  T G S  NAMESPACE                                    
+------------------- ------- - - - ----------                                    
+EDITION_NAME                                                                    
+--------------------------------------------------------------------------------
+SHARING            E O A                                                        
+------------------ - - -                                                        
+DEFAULT_COLLATION                                                               
+--------------------------------------------------------------------------------
+D S CREATED_APPID CREATED_VSNID MODIFIED_APPID MODIFIED_VSNID                   
+- - ------------- ------------- -------------- --------------                   
+CHG_CHANGE_LOG_PKG                                                              
+                                                                                
+    174625                PACKAGE BODY            09-OCT-2012 30-SEP-2022       
+2022-09-30:00:10:31 INVALID N N N          2                                    
+                                                                                
+NONE               Y N N                                                        
+                                                                                
+N N                                                                             
+                                                                                
+UTL                                                                             
+                                                                                
+    245428                PACKAGE BODY            22-OCT-2013 30-SEP-2022       
+2022-09-30:00:10:31 INVALID N N N          2                                    
+                                                                                
+NONE               Y N N                                                        
+                                                                                
+N N                                                                             
+                                                                                
+ART_CATER_CHARGE_CODES_VW                                                       
+                                                                                
+    173236                VIEW                    01-OCT-2012 30-SEP-2022       
+2022-09-30:00:09:41 INVALID N N N          1                                    
+                                                                                
+NONE               Y N N                                                        
+USING_NLS_COMP                                                                  
+N N                                                                             
+                                                                                
+
+Elapsed: 00:00:00.04
+drop table art_junc_repair_areas
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.30
+
+Table created.
+
+Elapsed: 00:00:00.01
+drop table art_junc_repair_areas_jn
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.01
+
+Trigger created.
+
+Elapsed: 00:00:00.16
+
+Trigger created.
+
+Elapsed: 00:00:00.12

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SSRL_RSW_AREA_AIUDR" directorySegmentName="seg_0" id="620DC30A-73DA-5B37-103E-D2D6A59673B2">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_AREA_AIUDR</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body>DECLARE&lt;br/&gt;    JN_OPERATION VARCHAR2(3);&lt;br/&gt;BEGIN&lt;br/&gt;    IF INSERTING THEN&lt;br/&gt;        JN_OPERATION := &apos;INS&apos;;&lt;br/&gt;    ELSIF UPDATING THEN&lt;br/&gt;        JN_OPERATION := &apos;UPD&apos;;&lt;br/&gt;    ELSIF DELETING THEN&lt;br/&gt;        JN_OPERATION := &apos;DEL&apos;;&lt;br/&gt;    END IF;&lt;br/&gt;    IF INSERTING OR UPDATING THEN&lt;br/&gt;        INSERT INTO SSRL_RSW_AREA_JN&lt;br/&gt;        ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION&lt;br/&gt;         , AREA_ID, AREA, STATUS_AI_CHK&lt;br/&gt;         , DISPLAY_ORDER, DESCRIPTION, CREATED_BY, CREATED_DATE&lt;br/&gt;         , MODIFIED_BY, MODIFIED_DATE&lt;br/&gt;         ) VALUES (jn_operation, NVL(V(&apos;APP_USER&apos;),USER), SYSDATE, NULL, NULL, userenv(&apos;sessionid&apos;)&lt;br/&gt;         , :NEW.AREA_ID, :NEW.AREA, :NEW.STATUS_AI_CHK&lt;br/&gt;         , :NEW.DISPLAY_ORDER, :NEW.DESCRIPTION, :NEW.CREATED_BY, :NEW.CREATED_DATE&lt;br/&gt;         , :NEW.MODIFIED_BY, :NEW.MODIFIED_DATE&lt;br/&gt;         );&lt;br/&gt;     END IF;&lt;br/&gt;     IF DELETING THEN&lt;br/&gt;         INSERT INTO SSRL_RSW_AREA_JN&lt;br/&gt;         ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION&lt;br/&gt;         , AREA_ID, AREA, STATUS_AI_CHK&lt;br/&gt;         , DISPLAY_ORDER, DESCRIPTION, CREATED_BY, CREATED_DATE&lt;br/&gt;         , MODIFIED_BY, MODIFIED_DATE&lt;br/&gt;         ) VALUES (jn_operation, NVL(V(&apos;APP_USER&apos;),USER), SYSDATE, NULL, NULL,userenv(&apos;sessionid&apos;)&lt;br/&gt;         , :OLD.AREA_ID, :OLD.AREA, :OLD.STATUS_AI_CHK&lt;br/&gt;         , :OLD.DISPLAY_ORDER, :OLD.DESCRIPTION, :OLD.CREATED_BY, :OLD.CREATED_DATE&lt;br/&gt;         , :OLD.MODIFIED_BY, :OLD.MODIFIED_DATE );&lt;br/&gt;         END IF;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<owner>0FAEE865-89F5-2F3A-E8BE-340C84480319</owner>
+<table>5A1FF75B-D62F-D954-2B01-A24DBB969219</table>
+</TriggerOraclev10g>

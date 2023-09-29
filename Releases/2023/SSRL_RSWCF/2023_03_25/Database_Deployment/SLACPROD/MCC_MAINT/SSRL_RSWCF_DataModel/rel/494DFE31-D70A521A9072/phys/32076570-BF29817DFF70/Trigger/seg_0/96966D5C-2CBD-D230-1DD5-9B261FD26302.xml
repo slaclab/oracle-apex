@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SSRL_RSW_DOCUMENT_BIUDR" directorySegmentName="seg_0" id="96966D5C-2CBD-D230-1DD5-9B261FD26302">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_DOCUMENT_BIUDR</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body>DECLARE&lt;br/&gt;    jn_operation VARCHAR2(3);&lt;br/&gt;begin&lt;br/&gt; if inserting then&lt;br/&gt;  if :NEW.DOC_ID is null then&lt;br/&gt;    select ssrl_rsw_document_SEQ.nextval into :NEW.DOC_ID from dual;&lt;br/&gt;  end if;&lt;br/&gt;&lt;br/&gt;  if :new.created_by is null then&lt;br/&gt;    :new.created_by := NVL(V(&apos;APP_USER&apos;),USER);&lt;br/&gt;    :new.created_date := sysdate;&lt;br/&gt;  end if;&lt;br/&gt; end if;&lt;br/&gt; --&lt;br/&gt;  if updating then&lt;br/&gt;    :new.modified_by := NVL(V(&apos;APP_USER&apos;),USER);&lt;br/&gt;    :new.modified_date := sysdate;&lt;br/&gt;  end if;&lt;br/&gt;--&lt;br/&gt;    IF INSERTING THEN&lt;br/&gt;       jn_operation := &apos;INS&apos;;&lt;br/&gt;    ELSIF UPDATING THEN&lt;br/&gt;       jn_operation := &apos;UPD&apos;;&lt;br/&gt;    ELSIF DELETING THEN&lt;br/&gt;       jn_operation := &apos;DEL&apos;;&lt;br/&gt;    END IF;&lt;br/&gt;    IF INSERTING OR UPDATING THEN&lt;br/&gt;       INSERT INTO ssrl_rsw_document_JN&lt;br/&gt;       ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION&lt;br/&gt;       , DOC_ID, FORM_ID, DOC_NAME, URL&lt;br/&gt;       , CREATED_BY, CREATED_DATE, MODIFIED_BY, MODIFIED_DATE&lt;br/&gt;       ) VALUES (jn_operation, NVL(V(&apos;APP_USER&apos;),USER), SYSDATE, NULL, NULL,&lt;br/&gt;userenv(&apos;sessionid&apos;)&lt;br/&gt;       , :NEW.DOC_ID, :NEW.FORM_ID, :NEW.DOC_NAME, :NEW.URL&lt;br/&gt;       , :NEW.CREATED_BY, :NEW.CREATED_DATE, :NEW.MODIFIED_BY, :NEW.MODIFIED_DATE&lt;br/&gt;        );&lt;br/&gt;    END IF;&lt;br/&gt;    IF DELETING THEN&lt;br/&gt;       INSERT INTO ssrl_rsw_document_JN&lt;br/&gt;       ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION&lt;br/&gt;       , DOC_ID, FORM_ID, DOC_NAME, URL&lt;br/&gt;       , CREATED_BY, CREATED_DATE, MODIFIED_BY, MODIFIED_DATE&lt;br/&gt;       ) VALUES (jn_operation, NVL(V(&apos;APP_USER&apos;),USER), SYSDATE, NULL, NULL,&lt;br/&gt;userenv(&apos;sessionid&apos;)&lt;br/&gt;       , :OLD.DOC_ID, :OLD.FORM_ID, :OLD.DOC_NAME, :OLD.URL&lt;br/&gt;       , :OLD.CREATED_BY, :OLD.CREATED_DATE, :OLD.MODIFIED_BY, :OLD.MODIFIED_DATE&lt;br/&gt;        );&lt;br/&gt;    END IF;&lt;br/&gt;--&lt;br/&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>0FAEE865-89F5-2F3A-E8BE-340C84480319</owner>
+<table>9B6CDF8B-836D-990E-9D94-A1EF77390BB3</table>
+</TriggerOraclev10g>

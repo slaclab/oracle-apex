@@ -1,0 +1,81 @@
+set echo on
+spool update_null_keyword_NONMAD.lst
+
+create table lcls_elements_keyword_upd
+as select * from lcls_elements;
+create table lcls_elements_jn_keyword_upd
+as select * from lcls_elements_jn;
+
+update lcls_elements
+set keyword = 'GDR'
+where element in (
+'SLOT_U15',
+'SLOT_U21',
+'SLOT_U22'
+);
+
+update lcls_elements
+set keyword = 'INST'
+where element in (
+'VGCC_UND_PEPX1',
+'VGCC_UND_PEPX2',
+'VGCC_UND_PEPX3'
+);
+
+update lcls_elements
+set keyword = 'INST'
+where element in (
+'VGPR_UND_PEPX1',
+'VGPR_UND_PEPX2',
+'VGPR_UND_PEPX3'
+);
+
+update lcls_elements
+set keyword = 'PUMP'
+where element in (
+'VPPEPX1',
+'VPPEPX2'
+);
+
+update lcls_elements
+set keyword = 'PBLM'
+where element in (
+'PBLMBSY10',
+'PBLMBSY20',
+'PBLMBSY30',
+'PBLMBSY40',
+'PBLMBSY80',
+'PBLMBSY50',
+'PBLMBSY60',
+'PBLMBSY70',
+'PBLMBSY90',
+'PBLMBSY100',
+'PBLMLTU10',
+'PBLMLTU20',
+'PBLMLTU30',
+'PBLMLTU40',
+'PBLMLTU50',
+'PBLMLTU60',
+'PBLMLTU70',
+'PBLMLTU80',
+'PBLMLTU90',
+'PBLMLTU100',
+'PBLMLTU110',
+'PBLMLTU120',
+'PBLMLTU130',
+'PBLMLTU140',
+'PBLMLTU150',
+'PBLMLTU160',
+'PBLMUND10',
+'PBLMDMP10',
+'PBLMDMP20',
+'PBLMDMP30',
+'PBLMDMP40',
+'PBLMDMP50',
+'PBLMDMP60',
+'PBLMDMP70',
+'PBLMDMP80'
+);
+
+-- commit;
+spool off;

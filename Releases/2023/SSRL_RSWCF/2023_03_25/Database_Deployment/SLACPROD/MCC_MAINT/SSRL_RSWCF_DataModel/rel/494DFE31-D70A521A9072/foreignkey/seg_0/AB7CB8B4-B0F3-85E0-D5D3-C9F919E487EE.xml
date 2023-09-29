@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AB7CB8B4-B0F3-85E0-D5D3-C9F919E487EE" containerWithKeyObject="F558276E-21BC-3E99-3250-CAE9EFBE4C85" localFKIndex="0550674F-F885-6DAA-1690-4337ABE2E092" name="SSRL_RSW_USER_ROLES_SSRL_RSW_ROLES_FK">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:53:12 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<referredTableLongName>MCC_MAINT.SSRL_RSW_ROLES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C01B4EB-CFEE-A2D9-6065-50EFB459062C</referredTableID>
+<keyObject>9ECD2F28-E07B-BD53-218C-53EF00D8BE8C</keyObject>
+<referredKeyID>9ECD2F28-E07B-BD53-218C-53EF00D8BE8C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ROLE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

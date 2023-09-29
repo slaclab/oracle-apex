@@ -1,0 +1,100 @@
+SQL> 
+SQL> create table lcls_elements_keyword_upd
+  2  as select * from lcls_elements;
+
+Table LCLS_ELEMENTS_KEYWORD_UPD created.
+
+SQL> create table lcls_elements_jn_keyword_upd
+  2  as select * from lcls_elements_jn;
+
+Table LCLS_ELEMENTS_JN_KEYWORD_UPD created.
+
+SQL> 
+SQL> update lcls_elements
+  2  set keyword = 'GDR'
+  3  where element in (
+  4  'SLOT_U15',
+  5  'SLOT_U21',
+  6  'SLOT_U22'
+  7  );
+
+3 rows updated.
+
+SQL> 
+SQL> update lcls_elements
+  2  set keyword = 'INST'
+  3  where element in (
+  4  'VGCC_UND_PEPX1',
+  5  'VGCC_UND_PEPX2',
+  6  'VGCC_UND_PEPX3'
+  7  );
+
+3 rows updated.
+
+SQL> 
+SQL> update lcls_elements
+  2  set keyword = 'INST'
+  3  where element in (
+  4  'VGPR_UND_PEPX1',
+  5  'VGPR_UND_PEPX2',
+  6  'VGPR_UND_PEPX3'
+  7  );
+
+3 rows updated.
+
+SQL> 
+SQL> update lcls_elements
+  2  set keyword = 'PUMP'
+  3  where element in (
+  4  'VPPEPX1',
+  5  'VPPEPX2'
+  6  );
+
+2 rows updated.
+
+SQL> 
+SQL> update lcls_elements
+  2  set keyword = 'PBLM'
+  3  where element in (
+  4  'PBLMBSY10',
+  5  'PBLMBSY20',
+  6  'PBLMBSY30',
+  7  'PBLMBSY40',
+  8  'PBLMBSY80',
+  9  'PBLMBSY50',
+ 10  'PBLMBSY60',
+ 11  'PBLMBSY70',
+ 12  'PBLMBSY90',
+ 13  'PBLMBSY100',
+ 14  'PBLMLTU10',
+ 15  'PBLMLTU20',
+ 16  'PBLMLTU30',
+ 17  'PBLMLTU40',
+ 18  'PBLMLTU50',
+ 19  'PBLMLTU60',
+ 20  'PBLMLTU70',
+ 21  'PBLMLTU80',
+ 22  'PBLMLTU90',
+ 23  'PBLMLTU100',
+ 24  'PBLMLTU110',
+ 25  'PBLMLTU120',
+ 26  'PBLMLTU130',
+ 27  'PBLMLTU140',
+ 28  'PBLMLTU150',
+ 29  'PBLMLTU160',
+ 30  'PBLMUND10',
+ 31  'PBLMDMP10',
+ 32  'PBLMDMP20',
+ 33  'PBLMDMP30',
+ 34  'PBLMDMP40',
+ 35  'PBLMDMP50',
+ 36  'PBLMDMP60',
+ 37  'PBLMDMP70',
+ 38  'PBLMDMP80'
+ 39  );
+
+35 rows updated.
+
+SQL> 
+SQL> -- commit;
+SQL> spool off;

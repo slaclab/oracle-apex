@@ -1,0 +1,95 @@
+BEGIN
+  SYS.DBMS_SCHEDULER.DROP_JOB
+    (job_name  => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB');
+END;
+/
+
+
+BEGIN
+  SYS.DBMS_SCHEDULER.CREATE_JOB
+    (
+       job_name        => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+      ,start_date      => systimestamp at time zone 'America/Los_Angeles'
+      ,repeat_interval => 'FREQ=DAILY;BYHOUR=13'
+      ,end_date        => NULL
+      ,job_class       => 'DEFAULT_JOB_CLASS'
+      ,job_type        => 'STORED_PROCEDURE'
+      ,job_action      => '"LCLS_INFRASTRUCTURE"."COMPARE_SYMBOLS_COLS_CHANGE"'
+      ,comments        => 'Job runs everyday at 5pm to alert users of any Linacz_m and Engineering name changes.'
+      ,auto_drop       => FALSE
+      ,enabled         => TRUE);
+
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'RESTARTABLE'
+     ,value     => FALSE);
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'LOGGING_LEVEL'
+     ,value     => SYS.DBMS_SCHEDULER.LOGGING_OFF);
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE_NULL
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'MAX_FAILURES');
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE_NULL
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'MAX_RUNS');
+END;
+/
+
+  BEGIN
+    SYS.DBMS_SCHEDULER.SET_ATTRIBUTE
+      ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+       ,attribute => 'STOP_ON_WINDOW_CLOSE'
+       ,value     => FALSE);
+  EXCEPTION
+    -- could fail if program is of type EXECUTABLE...
+    WHEN OTHERS THEN
+      NULL;
+  END;
+  /
+
+BEGIN
+ DBMS_SCHEDULER.ADD_JOB_EMAIL_NOTIFICATION (
+  job_name   =>  'COMPARE_SYMBOLS_CHANGES_JOB',
+  recipients =>  'poonam@slac.stanford.edu',
+  sender     =>  'COMPARE_SYMBOLS_CHANGES_JOB@slac.stanford.edu',
+  subject    =>  'Scheduler Job Notification-%job_owner%.%job_name%-%event_type%',
+  body       =>   '%event_type% occurred at %event_timestamp%. %error_message%',
+  events     =>  'JOB_FAILED, JOB_STOPPED, JOB_BROKEN, JOB_DISABLED, JOB_SCH_LIM_REACHED, JOB_OVER_MAX_DUR');
+END;
+/
+
+BEGIN
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'JOB_PRIORITY'
+     ,value     => 3);
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE_NULL
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'SCHEDULE_LIMIT');
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'AUTO_DROP'
+     ,value     => FALSE);
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'RAISE_EVENTS'
+     ,value     => SYS.DBMS_SCHEDULER.JOB_FAILED + SYS.DBMS_SCHEDULER.JOB_BROKEN + SYS.DBMS_SCHEDULER.JOB_STOPPED + SYS.DBMS_SCHEDULER.JOB_SCH_LIM_REACHED + SYS.DBMS_SCHEDULER.JOB_DISABLED);
+
+  SYS.DBMS_SCHEDULER.ENABLE
+    (name       => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB');
+  SYS.DBMS_SCHEDULER.SET_ATTRIBUTE
+    ( name      => 'LCLS_INFRASTRUCTURE.COMPARE_SYMBOLS_CHANGES_JOB'
+     ,attribute => 'MAX_RUN_DURATION'
+     ,value     => TO_DSINTERVAL('+000 00:03:00'));
+END;
+/
+
+-- To Disable and Stop running Job
+--exec dbms_scheduler.STOP_JOB('COMPARE_SYMBOLS_CHANGES_JOB');
+--exec dbms_scheduler.DISABLE('COMPARE_SYMBOLS_CHANGES_JOB');
+
+-- To enable it again
+--exec dbms_scheduler.ENABLE('COMPARE_SYMBOLS_CHANGES_JOB');
+--exec dbms_scheduler.RUN_JOB('COMPARE_SYMBOLS_CHANGES_JOB');
+

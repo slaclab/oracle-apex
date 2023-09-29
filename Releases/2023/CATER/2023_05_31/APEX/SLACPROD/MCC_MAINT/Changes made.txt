@@ -1,0 +1,6 @@
+APEX App is being modified - 
+Pages 18/200 to include the Div code for Groups LOV, using P0_CURRENT_DIV_CODE_ID. Otherwise, "Test Fac" is listed even though part of NLCTA group.
+
+Also modified the LOV "ACTIVE GROUPS" - changed for div code from P0_SLAC_DIVISION to P0_CURRENT_DIV_CODE_ID - as this could present problems for users who did All Div search
+and went into the Cater to create a new job for "TEC", while their top level Div code is "NLCTA".
+  -- This change impacts Pages 204,300,303 (Create new cater & Duplicate hw/sw job)

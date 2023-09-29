@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SSRL_RSW_USER_LOG" directorySegmentName="seg_0" id="2BAD52E5-C42E-5090-93FA-CC836F937E4F">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<schemaObject>6E914057-B62F-2BA5-5855-915E5330C7E7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>ED9A6B5E-C64E-9FE7-5BEA-804F5D4A6C57</segment>
+<tableSpace>D45AA9E7-DD36-E60A-F4AE-E2A2E5E4D705</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROLE_ID" id="1196C22A-6931-D7D2-407E-0E1266D7C691">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_SID" id="38F05B20-114F-F109-C9DE-AE89CE51CE7B">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_DATE" id="81DC3C9A-DCC6-13F4-4873-8822E151F670">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERNAME" id="ACEAA8B5-49A6-A9F6-2328-91F0E5DC3E7A">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

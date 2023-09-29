@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="66966429-79C7-C4D8-1602-AE120E798A0A" containerWithKeyObject="552FAD56-452F-0C6C-82F8-BA97E75D3908" localFKIndex="A17D8827-07B8-73EC-90A9-DF7D7889B47E" name="SSRL_RSW_ATTACHMENT_SSRL_RSW_FORM_FK">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:52:09 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<referredTableLongName>MCC_MAINT.SSRL_RSW_FORM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0258D8E6-B662-C15B-7C7E-483A9FE3EB96</referredTableID>
+<keyObject>4DB0D0EE-2B0E-0E77-8A34-1EBDBD141D5D</keyObject>
+<referredKeyID>4DB0D0EE-2B0E-0E77-8A34-1EBDBD141D5D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SSRL_FORM_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

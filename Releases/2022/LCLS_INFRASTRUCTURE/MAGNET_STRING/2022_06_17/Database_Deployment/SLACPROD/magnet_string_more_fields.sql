@@ -1,0 +1,9 @@
+alter table magnet_string add (
+UNIT_DISPLAY_OVERRIDE	VARCHAR2(1),
+HW_DISPLAY_OVERRIDE	VARCHAR2(1));
+
+alter table magnet_string_jn add (
+UNIT_DISPLAY_OVERRIDE	VARCHAR2(1),
+HW_DISPLAY_OVERRIDE	VARCHAR2(1));
+
+

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="310B954E-0245-6A9F-2F59-88EDF18448B5" schemaObject="6E914057-B62F-2BA5-5855-915E5330C7E7" name="SSRL_RSW_FORM_STATUS">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_FORM_STATUS</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FORM_STATUS_ID" id="B92F1D34-9485-009B-939E-88CBAED38FE3">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_FORM_STATUS</sourceObjSchema>
+<sourceObjName>FORM_STATUS_ID</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="451A35C0-5A0E-DCF0-8FB2-51D87D3FD996">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_FORM_STATUS</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="459647F5-0F3D-9A25-6A2A-349AB7429CEB">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_FORM_STATUS</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F25D0FA-F107-3257-D458-0BFEA85B6443" name="SSRL_RSW_FORM_STATUS_PK">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_FORM_STATUS_PK</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B92F1D34-9485-009B-939E-88CBAED38FE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD33B206-51F1-93A6-20B6-5532B6093710" schemaObject="6E914057-B62F-2BA5-5855-915E5330C7E7" name="SSRL_RSW_FORM_STATUS_PK">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_FORM_STATUS_PK</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B92F1D34-9485-009B-939E-88CBAED38FE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="PUBLIC" directorySegmentName="seg_0" id="PUBLIC">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:59:57 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="CD608F27-B83F-ACFD-9D1A-4BFB37CDA98E">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:59:58 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<privileges>SELECT</privileges>
+<view>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</view>
+</Permission>
+</permissions>
+</UserOraclev10g>

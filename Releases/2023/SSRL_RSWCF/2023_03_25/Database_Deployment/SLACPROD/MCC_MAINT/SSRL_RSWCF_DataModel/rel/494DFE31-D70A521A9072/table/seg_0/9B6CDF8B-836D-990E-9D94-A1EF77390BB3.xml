@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B6CDF8B-836D-990E-9D94-A1EF77390BB3" schemaObject="6E914057-B62F-2BA5-5855-915E5330C7E7" name="SSRL_RSW_DOCUMENT">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_DOCUMENT</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOC_ID" id="F43091A0-C1B0-5168-1133-204A174A518A">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>DOC_ID</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORM_ID" id="F8B04FB0-A526-F9B5-DE82-84C3279205E3">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>FORM_ID</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOC_NAME" id="475078D5-6ED8-445F-E196-1EC69E8FE891">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>DOC_NAME</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL" id="1551B38F-F9C1-5C52-5EA3-8C8A561E71DF">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>URL</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="60586ADB-F783-F5C7-229F-C1167C8E6F39">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="8E574A52-D54F-5009-C89B-EFB0F5157338">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>CREATED_DATE</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="15781C3A-70CB-72FD-AB86-D10A9CDC45BA">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DATE" id="F87BF3D2-3F47-4710-6DD0-66B077292298">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_DOCUMENT</sourceObjSchema>
+<sourceObjName>MODIFIED_DATE</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SSRL_RSW_FORM_SSRL_FORM_ID" id="3B94EF55-0F56-9317-6B3D-9F2D782039F7">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:52:49 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E879BFBA-2DDC-C810-BD9D-9450EEE5FE22" referredColumn="25C0D2EC-C013-2A53-6C11-170CECE69352"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="085195E7-E696-FEDE-E2C5-280A554F1FD9" name="SSRL_RSW_DOCUMENT_PK">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_DOCUMENT_PK</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F43091A0-C1B0-5168-1133-204A174A518A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAED9B6C-910D-F7AB-A386-301922389749" schemaObject="6E914057-B62F-2BA5-5855-915E5330C7E7" name="SSRL_RSW_DOCUMENT_IDX1">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_DOCUMENT_IDX1</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8B04FB0-A526-F9B5-DE82-84C3279205E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A1BF682-7FE0-3624-10B1-09BA0B658479" schemaObject="6E914057-B62F-2BA5-5855-915E5330C7E7" name="SSRL_RSW_DOCUMENT_PK">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_DOCUMENT_PK</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F43091A0-C1B0-5168-1133-204A174A518A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="370C8BC4-3935-C441-6DDE-46483A188F8B" name="SSRL_RSW_DOCUMENT_SSRL_RSW_FORM_FK">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:52:49 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B94EF55-0F56-9317-6B3D-9F2D782039F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

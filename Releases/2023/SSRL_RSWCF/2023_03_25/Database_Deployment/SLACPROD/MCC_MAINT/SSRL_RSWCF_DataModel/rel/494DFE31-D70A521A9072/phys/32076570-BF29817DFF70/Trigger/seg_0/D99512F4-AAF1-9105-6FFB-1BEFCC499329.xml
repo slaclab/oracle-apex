@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SSRL_RELEASES_BIUR" directorySegmentName="seg_0" id="D99512F4-AAF1-9105-6FFB-1BEFCC499329">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RELEASES_BIUR</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>declare&lt;br/&gt;&lt;br/&gt;    v_user          varchar2(100) := nvl(v(&apos;APP_USER&apos;),user);&lt;br/&gt;    v_jn_operation  varchar2(3);&lt;br/&gt;    v_now           date          := sysdate;&lt;br/&gt;    v_session       number        := userenv(&apos;sessionid&apos;);&lt;br/&gt;&lt;br/&gt;begin&lt;br/&gt;&lt;br/&gt;    if inserting then&lt;br/&gt;         select ssrl_releases_seq.nextval &lt;br/&gt;	 into :new.release_id &lt;br/&gt;	 from dual;&lt;br/&gt;	 --&lt;br/&gt;        :new.created_by   := v_user;&lt;br/&gt;        :new.created_date := sysdate;&lt;br/&gt;    end if;&lt;br/&gt;&lt;br/&gt;    if updating&lt;br/&gt;    then&lt;br/&gt;        :new.modified_by   := v_user;&lt;br/&gt;        :new.modified_date := sysdate;&lt;br/&gt;    end if;&lt;br/&gt;&lt;br/&gt;end; &lt;br/&gt;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>0FAEE865-89F5-2F3A-E8BE-340C84480319</owner>
+<table>815E06CC-37B3-BA94-920E-1AB885A3925E</table>
+</TriggerOraclev10g>

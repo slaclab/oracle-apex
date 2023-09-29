@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SSRL_RSWCF_DataModel" id="2DE0F6F5-0324-8F4E-2B63-9022614D439B" version="3.5">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:56:30 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2DE0F6F5-0324-8F4E-2B63-9022614D439B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="FF6E56B2-A12A-C597-F6A2-E1B6082EDA58">
+<designStoragePath>V:\CD\poonam\POONAM\RELEASES\2023\SSRL_RSWCF\MCC_MAINT\2023_03_25\Database_Deployment\SLACPROD</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

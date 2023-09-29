@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SSRL_RSW_BEAMLINE_MGR_JN" directorySegmentName="seg_0" id="480CFAF2-20B7-BFFC-0342-EEC094C0EA10">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<schemaObject>6E914057-B62F-2BA5-5855-915E5330C7E7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>ED9A6B5E-C64E-9FE7-5BEA-804F5D4A6C57</segment>
+<tableSpace>D45AA9E7-DD36-E60A-F4AE-E2A2E5E4D705</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="JN_ORACLE_USER" id="0252DBB1-6D4D-C2A5-EB4A-FF72DEB1503C">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AREA_ID" id="13B2E97B-9BCF-03BB-13E4-2D2E49BF6674">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_BY" id="21FCEFB1-9186-F6D9-BBC1-4618FC5FA4EC">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JN_NOTES" id="2961A0E9-3D7A-F6E5-3F7D-A94D4AF5080B">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JN_OPERATION" id="35AB9B94-AC9B-6A85-DE45-90829981DF22">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS_AI_CHK" id="49DF2B0E-D4AA-F541-5994-81FC80BB9597">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JN_DATETIME" id="9648A3EE-A8C7-7B68-F226-51BB75F8DC2E">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODIFIED_DATE" id="ADE65845-F3C5-4D8E-51D9-8703B1711D23">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JN_SESSION" id="B820DD5D-91D3-02AE-62C7-12835AA2ACAB">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_DATE" id="C621537A-C9E8-A409-FFE9-00F8AFB78154">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEAMLINE_MGR_ID" id="E442626B-1978-5E8E-4F83-E7D08F1E7C0C">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JN_APPLN" id="F51521E7-A856-415C-D648-109B191E1C7F">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODIFIED_BY" id="FDEA4779-9EC5-AC63-9890-709EE9F3A9FD">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

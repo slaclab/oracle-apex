@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SSRL_RSW_USER_ROLES" directorySegmentName="seg_0" id="F558276E-21BC-3E99-3250-CAE9EFBE4C85">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<schemaObject>6E914057-B62F-2BA5-5855-915E5330C7E7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>ED9A6B5E-C64E-9FE7-5BEA-804F5D4A6C57</segment>
+<tableSpace>D45AA9E7-DD36-E60A-F4AE-E2A2E5E4D705</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MODIFIED_BY" id="1BF71B36-BE55-AC99-9493-E5687A29ABF5">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_ID" id="306F0424-118A-AFC3-4314-1641993F1749">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_ROLE_ID" id="31416246-3470-5473-956B-DCC3DEF732AD">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIMARY_ROLE" id="397ED2FB-8F3E-EF1A-535F-7F25F33CAC89">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_DATE" id="480B7CDA-4C98-503B-6AAD-19C105783860">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_BY" id="5E554139-D27A-1428-CA6E-BE57CDC59A18">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODIFIED_DATE" id="7E61994E-54F6-7343-08D6-9111066139C6">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ROLE_ID" id="BE0CC87E-CA14-EE0B-E34C-4F966D68D2D9">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS_AI_CHK" id="C23FCAD3-8EF3-6B76-4CA0-52377F298759">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<defaultValue>&apos;A&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="SSRL_RSW_ROLES_ROLE_ID" id="D4B57BCA-AB12-DE35-A959-595C44F209EB">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:53:12 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SSRL_RSW_USER_ROLES_UDX1" id="A8A32DA5-8552-A259-F81F-5A99F63EEC0A">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<schemaObject>6E914057-B62F-2BA5-5855-915E5330C7E7</schemaObject>
+<segment>84913DF7-AA8E-2357-8976-558F8D401EC5</segment>
+<tableSpace>D45AA9E7-DD36-E60A-F4AE-E2A2E5E4D705</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SSRL_RSW_USER_ROLES_PK" id="EB68C4A1-8F9C-DCBA-BDB4-5995C084C444">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<schemaObject>6E914057-B62F-2BA5-5855-915E5330C7E7</schemaObject>
+<segment>84913DF7-AA8E-2357-8976-558F8D401EC5</segment>
+<tableSpace>D45AA9E7-DD36-E60A-F4AE-E2A2E5E4D705</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SSRL_RSW_USER_ROLES_SSRL_RSW_ROLES_FK" id="0550674F-F885-6DAA-1690-4337ABE2E092">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-20 23:53:12 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SSRL_RSW_USER_ROLES_PK" id="DE4E9CD3-0AF9-496F-34A5-4D05F0431AF7">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<segment>84913DF7-AA8E-2357-8976-558F8D401EC5</segment>
+<tableSpace>D45AA9E7-DD36-E60A-F4AE-E2A2E5E4D705</tableSpace>
+<existingIndex>EB68C4A1-8F9C-DCBA-BDB4-5995C084C444</existingIndex>
+<indexSegment>84913DF7-AA8E-2357-8976-558F8D401EC5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

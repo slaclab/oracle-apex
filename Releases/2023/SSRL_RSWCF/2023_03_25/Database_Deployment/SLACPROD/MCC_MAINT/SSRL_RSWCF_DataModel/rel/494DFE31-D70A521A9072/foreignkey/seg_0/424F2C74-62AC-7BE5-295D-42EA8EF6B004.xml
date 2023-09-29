@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="424F2C74-62AC-7BE5-295D-42EA8EF6B004" containerWithKeyObject="D576F725-E036-B470-7251-7550494828E4" localFKIndex="664C4EED-0A44-F084-5A50-021E363A4DAD" name="SSRL_RSW_BEAMLINE_MGR_FK1">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_BEAMLINE_MGR_FK1</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<referredTableLongName>MCC_MAINT.SSRL_RSW_AREA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A1FF75B-D62F-D954-2B01-A24DBB969219</referredTableID>
+<keyObject>F8B9A51B-9D90-0438-6E15-F709E5189BE1</keyObject>
+<referredKeyID>F8B9A51B-9D90-0438-6E15-F709E5189BE1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>AREA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

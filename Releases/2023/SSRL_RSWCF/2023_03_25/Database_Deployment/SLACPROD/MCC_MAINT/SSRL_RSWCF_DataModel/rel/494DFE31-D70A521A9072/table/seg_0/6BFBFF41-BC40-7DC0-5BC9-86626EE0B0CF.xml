@@ -1,0 +1,274 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BFBFF41-BC40-7DC0-5BC9-86626EE0B0CF" schemaObject="6E914057-B62F-2BA5-5855-915E5330C7E7" name="SSRL_RSW_ATTACHMENT_JN">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_ATTACHMENT_JN</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JN_OPERATION" id="74879A78-4EFC-6BD3-5BFB-8F7A0E371B4D">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>JN_OPERATION</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JN_ORACLE_USER" id="4E7BFCC5-F053-CC5D-53BB-62EC6767D11C">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>JN_ORACLE_USER</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JN_DATETIME" id="33D69A2E-BFE6-6DE9-87B0-C07C06746166">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>JN_DATETIME</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JN_NOTES" id="C88881FD-E35D-AE00-875F-0D42945CBA03">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>JN_NOTES</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>240 BYTE</dataTypeSize>
+<ownDataTypeParameters>240 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JN_APPLN" id="7EB5524B-23FF-36D1-761F-EA5F241B7A9A">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>JN_APPLN</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JN_SESSION" id="7D6C2D8F-494C-54FC-7D4F-1BA52FC5ED31">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>JN_SESSION</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILE_ID" id="52A6D51E-387F-6B7E-EDB9-7AA99A1A9164">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>FILE_ID</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORM_ID" id="A3BBA55B-EA90-67D6-39F2-F652D0EB67EB">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>FORM_ID</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="89EF6ED6-176C-DEE5-93AC-02DBE7251DB8">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOC_SIZE" id="0AB82E42-4D54-E310-802F-60A2779D4956">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>DOC_SIZE</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="98273710-86D7-824D-72B4-CC73FBB932D7">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="2F338FEB-58B8-D2D7-848A-2F64EB765404">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIME_TYPE" id="02B12A69-BC5D-3C04-0A8B-316EA4F4466A">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>MIME_TYPE</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLOB_CONTENT" id="E7508CB2-7DC3-6690-C234-797DB700231F">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>BLOB_CONTENT</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="F686F4D5-8046-7634-173A-601910545F7C">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_DATE" id="1677E9EA-CDAC-69AA-3EE9-C4281489347E">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>CREATED_DATE</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_BY" id="406EF1BB-2FDC-743D-810B-9962B7D59EFB">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>MODIFIED_BY</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFIED_DATE" id="BCA96C5E-F226-547B-2343-3EBBCE95340C">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>SSRL_RSW_ATTACHMENT_JN</sourceObjSchema>
+<sourceObjName>MODIFIED_DATE</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

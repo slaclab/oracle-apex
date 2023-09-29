@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SSRL_RSW_EMAIL_RULES" directorySegmentName="seg_0" id="12859EA8-2663-34C0-B53B-85D1C1BA5FCE">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<schemaObject>6E914057-B62F-2BA5-5855-915E5330C7E7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>ED9A6B5E-C64E-9FE7-5BEA-804F5D4A6C57</segment>
+<tableSpace>D45AA9E7-DD36-E60A-F4AE-E2A2E5E4D705</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMAIL_DESC" id="019300F1-3EFA-5F3D-EB8C-B1C8FC6BA7F4">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_BY" id="06ADB35E-09B5-0D3C-3342-22634192D14B">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODIFIED_DATE" id="1379DE56-99F5-A376-4EFB-3FED7DE4F455">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL_DESCR" id="1AEFE4E4-9E45-A6ED-5B6F-21A7E1A8C977">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODIFIED_BY" id="57A0817D-6064-3AB7-9E08-CA2B9AA5E25C">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED_DATE" id="6AC2A491-5AAA-4B0E-D899-2DCD8C7352CD">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL_NAME" id="6D1DDA1B-EB57-4A76-679B-A8D6A2F5B21D">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL_RULE" id="7C381D26-BA33-AD28-F90A-68E8814759E3">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS_AI_CHK" id="AC9D48CD-7217-A289-B94B-B61E4AE68D91">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL_ON_CHG" id="F8E39305-E20E-B406-F8C9-D5D2E39936C6">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:27 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

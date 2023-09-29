@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SSRL_RSW_USER_ROLES_BIUR" directorySegmentName="seg_0" id="F6E14494-0CF7-2560-1C04-D3CC10782FF5">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_USER_ROLES_BIUR</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>declare&lt;br/&gt;    jn_operation varchar2(3);&lt;br/&gt;begin&lt;br/&gt;&lt;br/&gt;  if inserting and :new.USER_ROLE_ID is null&lt;br/&gt;  then&lt;br/&gt;    select SSRL_RSW_USER_ROLES_SEQ.nextval into :new.USER_ROLE_ID from dual;&lt;br/&gt;  end if;&lt;br/&gt;&lt;br/&gt;  if inserting and :new.created_by is null&lt;br/&gt;  then&lt;br/&gt;    :new.created_by := nvl(v(&apos;APP_USER&apos;),user);&lt;br/&gt;    :new.created_date := sysdate;&lt;br/&gt;  end if;&lt;br/&gt;&lt;br/&gt;  if updating&lt;br/&gt;  then&lt;br/&gt;    :new.modified_by := nvl(v(&apos;APP_USER&apos;),user);&lt;br/&gt;    :new.modified_date := sysdate;&lt;br/&gt;  end if;&lt;br/&gt;end;&lt;br/&gt;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>0FAEE865-89F5-2F3A-E8BE-340C84480319</owner>
+<table>F558276E-21BC-3E99-3250-CAE9EFBE4C85</table>
+</TriggerOraclev10g>

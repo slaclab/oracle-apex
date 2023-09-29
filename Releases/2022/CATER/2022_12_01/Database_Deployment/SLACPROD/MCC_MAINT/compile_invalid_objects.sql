@@ -1,0 +1,1 @@
+alter VIEW ART_CATER_CHARGE_CODES_VW compile;

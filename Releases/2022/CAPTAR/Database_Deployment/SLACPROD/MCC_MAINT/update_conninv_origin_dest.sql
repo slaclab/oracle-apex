@@ -1,0 +1,54 @@
+drop table bkup_conninv;
+create table bkup_conninv
+as
+select * from conninv;
+
+drop table bkup_conninv_jn;
+create table bkup_conninv_jn
+as
+select * from conninv_jn;
+
+--update row origin
+update CAPTAR.CONNINV
+set ORIGIN = 'Y'
+where (cablenum, conninv_id) in
+(select cablenum, conninv_id 
+from(
+    select rownum n, a.*
+    from(
+        select cablenum, conninv_id
+        from CAPTAR.CONNINV
+        where cablenum in(
+            select CABLENUM
+            from CAPTAR.CONNINV
+            group by CABLENUM
+            having sum(1)=2
+        )
+        order by CABLENUM, conninv_id
+    ) a
+)
+where  mod (n, 2) <> 0
+);
+
+--update row destination
+update CAPTAR.CONNINV
+set ORIGIN = 'N'
+where (cablenum, conninv_id) in
+(select cablenum, conninv_id 
+from(
+    select rownum n, a.*
+    from(
+        select cablenum, conninv_id
+        from CAPTAR.CONNINV
+        where cablenum in(
+            select CABLENUM
+            from CAPTAR.CONNINV
+            group by CABLENUM
+            having sum(1)=2
+        )
+        order by CABLENUM, conninv_id
+    ) a
+)
+where  mod (n, 2) = 0
+);
+

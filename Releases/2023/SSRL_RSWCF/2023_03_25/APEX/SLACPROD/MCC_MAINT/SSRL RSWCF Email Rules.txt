@@ -1,0 +1,30 @@
+person responsible should be able to see the drop form checkbox
+give Refresh button
+work released - sec3 signoffs, PR and worker receive email, ssrl-bldo
+
+When Sec 5 checkbox unchecked, the name has to clear out from the db
+hide the "Transfer Form" button
+make 10 mins inactivity for logout
+
+Form Created :
+  - email to RP & PR for signoff
+
+Work Approved : (All 4 emails from App)
+  - email to Sec 3 signees
+  - email to BLMs for Area
+  - email to DO for signoff
+  - email to PR for assigning worker
+
+Work Released :
+  - email to BLMs for Area (from App)
+  - email to Sec3 signees, Sec 4 signees, bldo, spearops (trigger email)
+  - email to s4 worker & spearops from App - DISABLED it
+
+Work Complete :
+  - email to SSO (from trigger)
+
+Form Closed :
+  - email to BLMs for Area (from App)
+  - email to bldo (from App) - DISABLED it
+  - email to all signees, bldo, spearops (trigger email)
+

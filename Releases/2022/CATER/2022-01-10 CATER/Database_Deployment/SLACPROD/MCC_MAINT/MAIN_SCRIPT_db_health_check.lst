@@ -1,0 +1,109 @@
+15:36:21 SQL> 
+15:36:21 SQL> select * from user_objects where status='INVALID' order by object_type, object_name;
+
+OBJECT_NAME                                                                     
+--------------------------------------------------------------------------------
+SUBOBJECT_NAME                                                                  
+--------------------------------------------------------------------------------
+ OBJECT_ID DATA_OBJECT_ID OBJECT_TYPE             CREATED     LAST_DDL_TI       
+---------- -------------- ----------------------- ----------- -----------       
+TIMESTAMP           STATUS  T G S  NAMESPACE                                    
+------------------- ------- - - - ----------                                    
+EDITION_NAME                                                                    
+--------------------------------------------------------------------------------
+SHARING            E O A                                                        
+------------------ - - -                                                        
+DEFAULT_COLLATION                                                               
+--------------------------------------------------------------------------------
+D S CREATED_APPID CREATED_VSNID MODIFIED_APPID MODIFIED_VSNID                   
+- - ------------- ------------- -------------- --------------                   
+CHG_CHANGE_LOG_PKG                                                              
+                                                                                
+   4375109                PACKAGE BODY            03-SEP-2021 10-JAN-2022       
+2022-01-10:15:17:08 INVALID N N N          2                                    
+                                                                                
+NONE               Y N N                                                        
+                                                                                
+N N                                                                             
+                                                                                
+UTL                                                                             
+                                                                                
+   4375100                PACKAGE BODY            03-SEP-2021 10-JAN-2022       
+2022-01-10:15:17:09 INVALID N N N          2                                    
+                                                                                
+NONE               Y N N                                                        
+                                                                                
+N N                                                                             
+                                                                                
+ART_CATER_CHARGE_CODES_VW                                                       
+                                                                                
+   4375088                VIEW                    03-SEP-2021 10-JAN-2022       
+2022-01-10:15:36:21 INVALID N N N          1                                    
+                                                                                
+NONE               Y N N                                                        
+USING_NLS_COMP                                                                  
+N N                                                                             
+                                                                                
+
+3 rows selected.
+
+Elapsed: 00:00:00.02
+15:36:21 SQL> 
+15:36:21 SQL> select table_name, trigger_name,trigger_type, triggering_event from user_triggers
+15:36:21   2  where status='DISABLED'
+15:36:21   3  order by 1,2;
+
+TABLE_NAME                                                                      
+--------------------------------------------------------------------------------
+TRIGGER_NAME                                                                    
+--------------------------------------------------------------------------------
+TRIGGER_TYPE                                                                    
+----------------                                                                
+TRIGGERING_EVENT                                                                
+--------------------------------------------------------------------------------
+ART_JOBS                                                                        
+ART_JOBS_AIUS_TRG                                                               
+AFTER STATEMENT                                                                 
+INSERT OR UPDATE                                                                
+                                                                                
+ART_JOBS                                                                        
+ART_JOBS_MESSAGES_TRG                                                           
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE                                                                
+                                                                                
+ART_JUNC_CATER_DEPOT                                                            
+ART_JUNC_CATER_DEPOT_CHG_TRG                                                    
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE OR DELETE                                                      
+                                                                                
+ART_MAINT_ACCESS_TYPES                                                          
+ART_MAINT_ACCESS_TYPES_CHG_TRG                                                  
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE OR DELETE                                                      
+                                                                                
+ART_NOTIFICATIONS                                                               
+ART_NOTIFICATIONS_CHG_TRG                                                       
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE OR DELETE                                                      
+                                                                                
+ART_PROBLEMS                                                                    
+ART_PROBLEMS_MESSAGES_TRG                                                       
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE                                                                
+                                                                                
+ART_SOLUTIONS                                                                   
+ART_SOLUTIONS_AIUS_TRG                                                          
+AFTER STATEMENT                                                                 
+INSERT OR UPDATE                                                                
+                                                                                
+ART_SOLUTIONS                                                                   
+ART_SOLUTIONS_MESSAGES_TRG                                                      
+AFTER EACH ROW                                                                  
+INSERT OR UPDATE                                                                
+                                                                                
+
+8 rows selected.
+
+Elapsed: 00:00:00.01
+15:36:21 SQL> 
+15:36:21 SQL> spool off;

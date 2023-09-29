@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="MCC_MAINT" directorySegmentName="seg_0" id="0FAEE865-89F5-2F3A-E8BE-340C84480319">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjName>MCC_MAINT</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:26 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<schemaObject>6E914057-B62F-2BA5-5855-915E5330C7E7</schemaObject>
+</UserOraclev10g>

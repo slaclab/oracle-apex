@@ -1,0 +1,398 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="6714ABE9-C4A2-41F3-FBCC-7B10065A3534" schemaObject="CC4F665A-A4ED-8F0B-7C62-601E4E54E48F" name="PERSON">
+<sourceConnName>mcc_maint_SLACPROD</sourceConnName>
+<sourceObjSchema>PERSONS</sourceObjSchema>
+<sourceObjName>PERSON</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<importedID>2C8E4415-F05C-2558-6631-6948C06C6366</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW PERSON&lt;br/&gt;AS &lt;br/&gt;SELECT KEY, NAME, BIN, EXT, BLDG, ROOM, DEPT, STAFF, GONET, ASOF, FNAME, LNAME, IDNUM, PAGE, FAX, UPDATED, HUMAN, DIVISION, MAILSTOP, MAILDISP, SID_EMAIL,&lt;br/&gt;PHONEACCT, LAB_CAT, E_CAT, PREFIX, SUFFIX, STATUS, ATOM, PERSONAL_URL, DESK_LOC, DEPT_ID, SUPERVISOR_ID FROM SID.NEWPERSON$</userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="KEY" id="1FBC9A46-5E98-9E2B-B62A-096B16FA8DCA">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>KEY</alias>
+<dataType>NUMBER (7)</dataType>
+<headerAlias>KEY</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="NAME" id="7F3C22FB-85A7-B0AD-7401-8AA9B6CF133D">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NAME</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<headerAlias>NAME</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="BIN" id="2B8F2476-FA4F-568B-81B0-964470C4F6BF">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>BIN</alias>
+<dataType>VARCHAR2 (10 BYTE)</dataType>
+<headerAlias>BIN</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EXT" id="95345E03-15B3-07C9-4F19-29D920A5F298">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EXT</alias>
+<dataType>NUMBER (4)</dataType>
+<headerAlias>EXT</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="BLDG" id="C7E3BB6E-603E-6896-42E6-CA2612BB3033">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>BLDG</alias>
+<dataType>VARCHAR2 (16 BYTE)</dataType>
+<headerAlias>BLDG</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ROOM" id="1B33EA6C-9FAC-15B8-72F8-FF18FE49B818">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ROOM</alias>
+<dataType>VARCHAR2 (16 BYTE)</dataType>
+<headerAlias>ROOM</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DEPT" id="A54DD23F-4F85-D301-CCDB-E930E5431534">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEPT</alias>
+<dataType>VARCHAR2 (4 BYTE)</dataType>
+<headerAlias>DEPT</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="STAFF" id="BEB5CE7B-FDAF-19BA-7F87-CD39DBFAF51A">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>STAFF</alias>
+<dataType>NUMBER (5)</dataType>
+<headerAlias>STAFF</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="GONET" id="1E644E12-F7D7-5315-EDF8-197B76F0FB75">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>GONET</alias>
+<dataType>VARCHAR2 (10 BYTE)</dataType>
+<headerAlias>GONET</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ASOF" id="C054E9B3-93E4-13AE-32BF-255AB348C83D">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ASOF</alias>
+<dataType>DATE</dataType>
+<headerAlias>ASOF</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FNAME" id="7043C677-3A22-8F11-A047-B79307C9F07F">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FNAME</alias>
+<dataType>VARCHAR2 (15 BYTE)</dataType>
+<headerAlias>FNAME</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="LNAME" id="273F4235-1365-5B4F-4B8D-1FB144B4E732">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>LNAME</alias>
+<dataType>VARCHAR2 (15 BYTE)</dataType>
+<headerAlias>LNAME</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="IDNUM" id="C6EF4E66-C216-8244-5C08-52062BEE00D6">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>IDNUM</alias>
+<dataType>NUMBER (8)</dataType>
+<headerAlias>IDNUM</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PAGE" id="25ED8012-BE35-CD0D-9CB8-F5E442DE74FE">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PAGE</alias>
+<dataType>VARCHAR2 (14 BYTE)</dataType>
+<headerAlias>PAGE</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FAX" id="84B9597C-463B-2CF9-E1DC-B496A0953399">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FAX</alias>
+<dataType>VARCHAR2 (14 BYTE)</dataType>
+<headerAlias>FAX</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UPDATED" id="66A2A997-29C8-8E38-3D6E-4A87756835C2">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>UPDATED</alias>
+<dataType>DATE</dataType>
+<headerAlias>UPDATED</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HUMAN" id="D091BCA0-8206-396B-7C3B-4112D67634ED">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>HUMAN</alias>
+<dataType>VARCHAR2 (3 BYTE)</dataType>
+<headerAlias>HUMAN</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DIVISION" id="22A9906E-5EB3-B774-611C-569BE451C269">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DIVISION</alias>
+<dataType>VARCHAR2 (3 BYTE)</dataType>
+<headerAlias>DIVISION</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MAILSTOP" id="A5D09D26-89F0-AF72-76EF-83C9A98F22BD">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MAILSTOP</alias>
+<dataType>NUMBER (4)</dataType>
+<headerAlias>MAILSTOP</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MAILDISP" id="EB539403-FE9F-0B67-2A6E-1E6CE0B18C93">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MAILDISP</alias>
+<dataType>VARCHAR2 (80 BYTE)</dataType>
+<headerAlias>MAILDISP</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SID_EMAIL" id="FE7D7EFB-272E-4C1E-CEF9-62F50F1CD3AF">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SID_EMAIL</alias>
+<dataType>VARCHAR2 (80 BYTE)</dataType>
+<headerAlias>SID_EMAIL</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PHONEACCT" id="1BEAFDAA-96AA-B000-D48D-D864453E6052">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PHONEACCT</alias>
+<dataType>VARCHAR2 (7 BYTE)</dataType>
+<headerAlias>PHONEACCT</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="LAB_CAT" id="A8846AFC-B95B-E16C-2524-1CDDDEA72B60">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>LAB_CAT</alias>
+<dataType>VARCHAR2 (1 BYTE)</dataType>
+<headerAlias>LAB_CAT</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="E_CAT" id="DA9F32A4-D0EF-04BD-48F2-4F1B8F5817A6">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>E_CAT</alias>
+<dataType>VARCHAR2 (1 BYTE)</dataType>
+<headerAlias>E_CAT</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PREFIX" id="01BD6DA5-2A74-E2F3-CC58-D4F0B8C370CB">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PREFIX</alias>
+<dataType>VARCHAR2 (6 BYTE)</dataType>
+<headerAlias>PREFIX</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SUFFIX" id="58639164-1E97-C240-23F3-280A205C61C4">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SUFFIX</alias>
+<dataType>VARCHAR2 (6 BYTE)</dataType>
+<headerAlias>SUFFIX</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="STATUS" id="A4C70238-3E49-99D1-159F-AE8E0A24CC1C">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>STATUS</alias>
+<dataType>VARCHAR2 (10 BYTE)</dataType>
+<headerAlias>STATUS</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ATOM" id="267C877A-1B0D-0EA5-5EEE-CE2561CC9B5F">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ATOM</alias>
+<dataType>NUMBER (7)</dataType>
+<headerAlias>ATOM</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PERSONAL_URL" id="71BC44C8-1F14-4DD5-D66A-0064E1F74341">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PERSONAL_URL</alias>
+<dataType>VARCHAR2 (250 BYTE)</dataType>
+<headerAlias>PERSONAL_URL</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DESK_LOC" id="6CC3433C-46F3-CABE-EF2F-D451A5B89BD4">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DESK_LOC</alias>
+<dataType>VARCHAR2 (5 BYTE)</dataType>
+<headerAlias>DESK_LOC</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DEPT_ID" id="8BC37B86-0E84-20F4-463A-B831F6477DDC">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DEPT_ID</alias>
+<dataType>VARCHAR2 (6 BYTE)</dataType>
+<headerAlias>DEPT_ID</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SUPERVISOR_ID" id="C813EA83-8D02-AC5E-9145-B0AE47D6EAC7">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-21 00:00:07 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SUPERVISOR_ID</alias>
+<dataType>NUMBER (7)</dataType>
+<headerAlias>SUPERVISOR_ID</headerAlias>
+<reference>false</reference>
+<viewID>6714ABE9-C4A2-41F3-FBCC-7B10065A3534</viewID>
+</viewElement>
+</viewElements>
+</TableView>

@@ -1,0 +1,2 @@
+alter table cable_install_upload_extra rename column sector_area to sector_area_source;
+alter table cable_install_upload_extra_jn rename column sector_area to sector_area_source;

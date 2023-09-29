@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SSRL_RSW_AREA_BIUDR" directorySegmentName="seg_0" id="F2A056DE-9036-14DC-1F7A-89DAEC5B012E">
+<sourceConnName>mcc_maint_SLACSTG</sourceConnName>
+<sourceObjSchema>MCC_MAINT</sourceObjSchema>
+<sourceObjName>SSRL_RSW_AREA_BIUDR</sourceObjName>
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:57:29 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body>DECLARE&lt;br/&gt;    jn_operation VARCHAR2(3);&lt;br/&gt; BEGIN&lt;br/&gt;&lt;br/&gt;    if inserting and :new.area_ID is null then&lt;br/&gt;        select SSRL_RSW_AREA_SEQ.nextval&lt;br/&gt;	into :new.area_ID&lt;br/&gt;	from dual;&lt;br/&gt;    end if;&lt;br/&gt;    if inserting and :new.created_by is null  then&lt;br/&gt;        :new.created_by := NVL(V(&apos;APP_USER&apos;),USER);&lt;br/&gt;        :new.created_date := sysdate;&lt;br/&gt;        :new.area := upper(:new.area);&lt;br/&gt;    end if;&lt;br/&gt;    if updating then&lt;br/&gt;        :new.modified_by := NVL(V(&apos;APP_USER&apos;),USER);&lt;br/&gt;        :new.modified_date := sysdate;&lt;br/&gt;        :new.area := upper(:new.area);&lt;br/&gt;    end if;&lt;br/&gt;END;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>0FAEE865-89F5-2F3A-E8BE-340C84480319</owner>
+<table>5A1FF75B-D62F-D954-2B01-A24DBB969219</table>
+</TriggerOraclev10g>

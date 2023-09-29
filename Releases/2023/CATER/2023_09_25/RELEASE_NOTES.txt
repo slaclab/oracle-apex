@@ -1,0 +1,13 @@
+This update to CATER contains three changes.
+
+1) Re-arranging tabs of the 8:15 Meeting.  'Ops Report' and 'Weekend Report' are now 
+to the left of 'New CATERs' and 'Closed'.
+
+2) When selecting a new Area Manager from 'LOV Maint', it was possible to select 
+anyone from SLAC, not just CATER users.  It is now only possible to select
+CATER users.  The query displaying the current Area Manager has also been edited 
+to ensure that the AM will be displayed even if they become inactive.
+
+3) When selecting a new Shop manager from 'LOV Maint', the same issue as above 
+occurred.  This has also been fixed.  The query displaying the current Shop lead
+has also been edited to ensure that the AM will be displayed even if they become inactive.

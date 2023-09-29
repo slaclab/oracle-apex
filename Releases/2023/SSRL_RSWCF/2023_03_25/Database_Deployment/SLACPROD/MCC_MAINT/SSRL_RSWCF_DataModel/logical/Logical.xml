@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="32AD31E9-4434-A48D-3652-4A747094DACB" mainViewID="1CDED264-FD49-F78A-EC5F-80DC2679225F">
+<createdBy>poonam</createdBy>
+<createdTime>2023-04-19 21:56:30 UTC</createdTime>
+<ownerDesignName>SSRL_RSWCF_DataModel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

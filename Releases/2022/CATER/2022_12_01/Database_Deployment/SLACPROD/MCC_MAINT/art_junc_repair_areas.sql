@@ -1,0 +1,74 @@
+drop table art_junc_repair_areas;
+create table art_junc_repair_areas  (
+SCHED_REPAIR_ID	NUMBER,
+AREA_ID		NUMBER,
+CREATED_BY	VARCHAR2(30),
+CREATED_DATE	DATE,
+MODIFIED_BY	VARCHAR2(30),
+MODIFIED_DATE	DATE
+);
+
+drop table art_junc_repair_areas_jn;
+create table art_junc_repair_areas_jn  (
+JN_OPERATION	VARCHAR2(3),
+JN_ORACLE_USER	VARCHAR2(30),
+JN_DATETIME	DATE,
+JN_NOTES	VARCHAR2(240),
+JN_APPLN	VARCHAR2(30),
+JN_SESSION	NUMBER(38),
+SCHED_REPAIR_ID	NUMBER,
+AREA_ID		NUMBER,
+CREATED_BY	VARCHAR2(30),
+CREATED_DATE	DATE,
+MODIFIED_BY	VARCHAR2(30),
+MODIFIED_DATE	DATE
+);
+
+create or replace TRIGGER "MCC_MAINT"."ART_JUNC_REPAIR_AREAS_BIUDR" 
+ BEFORE INSERT OR UPDATE OR DELETE 
+ ON MCC_MAINT.ART_JUNC_REPAIR_AREAS  FOR EACH ROW
+DECLARE
+    jn_operation VARCHAR2(3);
+ BEGIN
+ 
+    if inserting and :new.created_by is null  then
+        :new.created_by := NVL(V('APP_USER'),USER);
+        :new.created_date := sysdate;
+    end if;
+    if updating then
+        :new.modified_by := NVL(V('APP_USER'),USER);
+        :new.modified_date := sysdate;
+    end if;
+    
+    IF :NEW.CREATED_BY = 'STATUS_CHECK' THEN 
+       RETURN; 
+    ELSIF INSERTING THEN
+       jn_operation := 'INS';
+    ELSIF UPDATING THEN
+       jn_operation := 'UPD';
+    ELSIF DELETING THEN
+       jn_operation := 'DEL';
+    END IF;
+    IF INSERTING OR UPDATING THEN
+       INSERT INTO ART_JUNC_REPAIR_AREAS_JN 
+       ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION
+       , AREA_ID, SCHED_REPAIR_ID, CREATED_BY
+       , CREATED_DATE, MODIFIED_BY, MODIFIED_DATE
+       ) VALUES (jn_operation, NVL(V('APP_USER'),USER), SYSDATE, NULL, NULL,
+userenv('sessionid')
+       , :NEW.AREA_ID, :NEW.SCHED_REPAIR_ID, :NEW.CREATED_BY
+       , :NEW.CREATED_DATE, :NEW.MODIFIED_BY, :NEW.MODIFIED_DATE
+        );
+    END IF;
+    IF DELETING THEN
+       INSERT INTO ART_JUNC_REPAIR_AREAS_JN 
+       ( JN_OPERATION, JN_ORACLE_USER, JN_DATETIME, JN_NOTES, JN_APPLN, JN_SESSION
+       , AREA_ID, SCHED_REPAIR_ID, CREATED_BY
+       , CREATED_DATE, MODIFIED_BY, MODIFIED_DATE
+       ) VALUES (jn_operation, NVL(V('APP_USER'),USER), SYSDATE, NULL, NULL,
+userenv('sessionid')
+       , :OLD.AREA_ID, :OLD.SCHED_REPAIR_ID, :OLD.CREATED_BY
+       , :OLD.CREATED_DATE, :OLD.MODIFIED_BY, :OLD.MODIFIED_DATE );
+    END IF; 
+END;
+/
